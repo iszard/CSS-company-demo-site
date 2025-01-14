@@ -60,7 +60,7 @@ main {
 @media (min-width: 40rem) {
   .testimonial {
     margin: 3rem auto;
-    max-width: 1500px;
+    max-width: 93.75rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
