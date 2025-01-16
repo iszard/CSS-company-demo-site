@@ -7,8 +7,6 @@ var mobileNav = document.querySelector(".mobile-nav");
 
 for (var i = 0; i < selectPlanButton.length; i++) {
   selectPlanButton[i].addEventListener("click", () => {
-    // modal.style.display = "block";
-    // backdrop.style.display = "block";
     modal.classList.add("open");
     backdrop.style.display = "block";
     setTimeout(() => {
@@ -18,8 +16,6 @@ for (var i = 0; i < selectPlanButton.length; i++) {
 }
 
 var closeModal = () => {
-  //   modal.style.display = "none";
-  //   backdrop.style.display = "none";
   modal?.classList.remove("open");
   backdrop.classList.remove("open");
   setTimeout(() => {
@@ -28,7 +24,6 @@ var closeModal = () => {
 };
 
 backdrop.addEventListener("click", () => {
-  //   mobileNav.style.display = "none";
   mobileNav.classList.remove("open");
   closeModal();
 });
@@ -36,8 +31,6 @@ backdrop.addEventListener("click", () => {
 modalNoButton?.addEventListener("click", closeModal);
 
 toggleButton.addEventListener("click", () => {
-  //   mobileNav.style.display = "block";
-  //   backdrop.style.display = "block";
   mobileNav.classList.add("open");
   backdrop.style.display = "block";
   setTimeout(() => {

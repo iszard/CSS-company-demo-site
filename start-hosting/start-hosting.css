@@ -10,6 +10,7 @@ main {
 
 .signup-form {
   padding: 1rem;
+  display: -ms-grid;
   display: grid;
   grid-auto-rows: 2rem;
   grid-row-gap: 0.5rem;
@@ -26,7 +27,6 @@ main {
   width: 100%;
 }
 
-/* .signup-form input[type="checkbox"] */
 .signup-form input[id*="terms"],
 .signup-form input[id*="terms"] + label {
   display: inline-block;
@@ -79,6 +79,7 @@ main {
   .signup-form {
     margin: auto;
     width: 30rem;
+    -ms-grid-columns: 10rem 0.5rem auto;
     grid-template-columns: 10rem auto;
     grid-row-gap: 1rem;
     grid-column-gap: 0.5rem;
@@ -89,6 +90,7 @@ main {
   } */
 
   .signup-form__checkbox {
+    -ms-grid-column-span: 2;
     grid-column: span 2;
   }
 }
